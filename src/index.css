@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+  box-sizing: border-box;
+  background-image: url(./pictures/space.jpg);
+  position:absolute;
+  font-family: 'Shadows Into Light', cursive;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width:100%;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.Nav{
+  background-color: rgb(108, 246, 180,0.1);
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  font-size:20px;
+  font-weight: bold;
+  color:rgb(116, 116, 116);
+  height:8vh;
+  position:absolute;
+  width:100%;
+}
+.tablet{
+  display:none;
+}
+
+
+.item{
+  float:right;
+  margin-right: 2vw;
+  color:rgb(116, 116, 116);
+}
+
+.sm-comet{
+  color:rgb(95, 245, 26);
+  padding-right: 10px;
+  text-shadow: 2px -2px 5px rgb(223, 0, 223);
+  position:relative;
+  padding-bottom:30px;
+}
+
+.search-area{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:92vh;
+  font-size:90px;
+}
+.search{
+  padding-top:50px;
+}
+
+.item:hover{
+  color:rgb(223, 0, 223);
+  cursor:pointer;
+}
+.lefticon{
+  margin-left:2vw;
+  margin-top:2vh;
+}
+
+.lefticon:hover{
+  color:rgb(223, 0, 223);;
+  cursor:pointer;
+  text-shadow: 2px -2px 5px rgb(223, 0, 223);
+}
+
+.fa-3x{
+  color:rgb(209, 206, 5);
+  text-shadow: 5px -5px 5px rgb(64, 252, 7);
+  position:relative;
+  top:-80px;
+  right:-10px;
+}
+
+.search-bar{
+  width:60vw;
+  height:50px;
+  font-size:40px;
+  font-family: 'Shadows Into Light', cursive;
+  padding:10px;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid rgb(64, 252, 7);
+  outline:none;
+  color:rgb(64, 252, 7);
+  padding-left:20px;
+}
+
+footer{
+  background-color: antiquewhite;
+  height:2vh;
+  overflow:hidden;
+  position:absolute;
+  bottom:0px;
+  width:100%;
+}
+.fa-arrow-right{
+  font-size: 2rem;
+  font-weight:100px;
+  color:yellow;
+}
+
+.search-btn{
+  background-color: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+.search-btn:hover .fa-arrow-right{
+  color: rgb(64, 252, 7);
+}
+
+.btn-icon{
+  position:relative;
+  right:40px;
+}
+
+.container{
+  color:green;
+  height:92vh;
+  background-color: rgb(240, 248, 255, 0.3);
+}
+
+.info{
+  background-color: rgba(192, 161, 161, 0.3);
+  width: 40vw;
+  height:40vw;
+  position:absolute;
+  left:200px;
+  top:100px;
+}
+
+.weather-container{
+  color:green;
+  place-content: center;
+  position:fixed;
+  top: 25%;
+  left: 32%;
+} 
+
+.outer-box{
+  background-color: rgb(46, 44, 44, 0.7);
+  overflow:hidden;
+  width:600px;
+  height:600px;
+  position:absolute;
+  top:25%;
+  left:25%;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-box{
+  background-color: rgba(112, 81, 81, 0.7);
+  position:absolute;
+  width:550px;
+  height:550px;
+  border-radius:20px;
+  padding:10px;
+  font-size: 2rem;
+}
+.city-name{
+  font-size:4rem;
+  color:aqua;
+}
+.current-weather{
+  font-size: 3rem;
+  padding-top:20px;
+}
+
+.future-week{
+  display: flex;
+  flex-direction: row;
+  font: 3rem;
+  list-style-type:none;
+}
+
+.about{
+  position:fixed;
+  color:rgb(64, 252, 7,0.4);
+  font-size: 2rem;
+  top: 10%;
+  left: 10%;
+  width: 800px;
+  margin: 0 auto;
+  padding:20px;
+}
+
+.title{
+  font-size: 2.5rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+}
+
+.not-exist{
+  position:relative;
+  top:10vh;
+  padding-left: 20px;
+  font-size: 3rem;
+  color:aquamarine;
+}
+
+.humid{
+  color:aqua;
+}
+.not-humid{
+  color:green;
+}
+
+.warm{
+  color:rgb(236, 48, 48);
+}
+
+.cold{
+  color:rgb(11, 123, 252);
+}
+.cur-weather{
+  color:rgb(12, 245, 82);
+}
+
+@media screen and (max-width: 1024px) {
+
+  .name{
+    display:none;
+  }
+
+  .Nav{
+    font-size: 60px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right: 10px;;
+  }
+  .item{
+    font-size:40px;
+  }
+  #searchinput::placeholder{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #searchinput::placeholder{
+    color:transparent;
+  }
+  .tablet{
+    display: initial;
+    font-family: 'Segoe UI';
+    border: none;
+    width:50px;
+    height:50px;
+    background-color: rgb(64, 252, 7, 0.5);
+  }
+  .tablet:hover{
+    background-color: rgb(209, 206, 5, 0.5);
+    color:rgb(64, 252, 7);
+  }
+  .about{
+    left:0;
+    width:100vw;
+    overflow: scroll;
+  }
+  .outer-box{
+    background-color: transparent;
+    font: smaller;
+    position:fixed;
+    left:0;
+    top:100px;
+    margin-left:20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner-box{
+    background-color: transparent;
+  }
+}
